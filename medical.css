@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 39px;
+    letter-spacing: 3.9px;
+    word-spacing: 3.9px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+section#intro {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+ section#intro h2{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+  
+}
+
+section#intro p{
+    font-size: 22px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+section#services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+.service-card h3{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+.service-card p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+}
+
+.Book{
+    border-radius: 9px;
+    font-size: 16px;
+    width: 26%;
+    height: 43px;
+    border: 2px solid;
+    background-color: #0000ffb5;
+    color: white;
+}
+
+.Book:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* MEDICAL ASPECT */
+/* Container to hold both cards */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the two cards */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Report card styling */
+.report-card {
+    flex: 3;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.report-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+.report-card button {
+    padding: 10px 20px;
+    background-color: #1100ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 18px;
+
+}
+
+.report-card p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+}
+.report-card button:hover {
+    background-color: #218838;
+}
+
+/* Fitness card styling */
+.fitness-card {
+    flex: 8;
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-section {
+    width: 40%;
+    padding: 20px;
+}
+.left-section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.right-section {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-section h2 {
+    margin: 0;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+.right-section p {
+    color: #000000;
+    margin: 20px 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+}
+.right-section button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.right-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    font-family: 'Lato', sans-serif;
+    position: relative; /* Ensure footer is positioned relative to its container */
+    clear: both; /* Clears floats if necessary */
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 20px 10px;
+    min-width: 250px; /* Ensures minimum width for responsiveness */
+}
+
+.footer-left h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-center h3, .footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin-bottom: 10px;
+}
+
+.footer-center ul li a {
+    text-decoration: none;
+    color: #bdc3c7;
+    font-size: 14px;
+}
+
+.footer-center ul li a:hover {
+    color: #ecf0f1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+.footer-right p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-right i {
+    margin-right: 10px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        margin-bottom: 20px;
+    }
+}

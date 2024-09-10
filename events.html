@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="events.css" />
+    <!-- Unicons CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="events.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn" onclick="toggleMenu()"></i>
+        <a href="#" class="logo">क्रीडा</a>
+    
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="medical.html">Medical</a></li>
+        </ul>
+    
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Search here..." />
+        </div>
+    </nav>   
+
+    <!-- slider -->
+    <section class="home">
+         <!-- <div class="max-width">
+            <div class="home-content">
+                <div class="text-2">NATIONAL ARENA</div>
+            </div>
+        </div> -->
+        <!-- <div class="containers scroll-right">
+            <span>Live News</span>
+            <marquee behavior="" direction="right">Live Sports News Will Be Displayed Here !!!</marquee>
+        </div> -->
+        
+        <!-- <div class="text">
+            <h2>क्रीडा</h2>
+        </div> -->
+    </section>
+
+        <!-- Main Content -->
+        <div class="main-container">
+            <!-- News Section with Tabs -->
+            <div class="news-section">
+                <div class="tabs">
+                    <button class="tablinks active" onclick="openTab(event, 'notices')">Public Notices</button>
+                    <button class="tablinks" onclick="openTab(event, 'events')">News & Events</button>
+                </div>
+    
+                <div class="tabcontent" id="notices">
+                    <ul>
+                        <li>Paris Paralympics 2024, Day 11 Highlights: Pooja Ojha out of women’s Kayak Single 200m KL1, Closing Ceremony updates, India results</li>
+                        <li>The Closing Ceremony of Paris Paralympics 2024 will begin at 11:30 PM IST. We’ll be back with LIVE coverage of the event!</li>
+                        <li>Navdeep got India its seventh gold medal of Paris 2024.</li>
+                        <li>Live telecast of the Paris Paralympics is available on DD Sports channel while live streaming is available on Jio Cinema as well as the official YouTube channel of Paralympics from August 28 to September 8.</li>
+                        <li class="rainbow-text">Stay Tuned For More Updates...</li>
+                    </ul>
+                </div>
+    
+                <div class="tabcontent" id="events" style="display:none;">
+                    <ul>
+                        <li><b>US Open (Tennis):</b><br>
+                            <b>Dates:</b>August 26 - September 8, 2024 <br>
+                            <b>Location:</b>USTA Billie Jean King National Tennis Center, New York City, USA <br>
+                            The final rounds of this prestigious tennis tournament will take place at the beginning of September, featuring top players from around the world.</li>
+                        <li> <b>Laver Cup (Tennis)</b>: <br>
+                           <b>Dates:</b>September 20-22, 2024 <br>
+                            <b>Location:</b>Mercedes-Benz Arena, Berlin, Germany <br>
+                            A men’s team tournament where Team Europe faces off against Team World in a thrilling tennis battle.</li>
+                        <li><b>Indian Premier League (IPL) 2024</b></li>
+                        <li><b>Pro Kabaddi League (PKL) 2024</b></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Introduction Section -->
+            <div class="intro-section">
+                <h2>INTRODUCTION</h2>
+                <p>
+                    Welcome to our Events and Notices page, where we bring you the latest updates on upcoming global sporting events. From tennis showdowns like the prestigious US Open to team-based competitions such as the Laver Cup, these events promise excitement for sports fans around the world. You’ll also find major league updates, including the much-anticipated seasons of the Indian Premier League (IPL) and Pro Kabaddi League (PKL). Stay tuned for details on event dates, venues, and the top players competing in these thrilling tournaments.
+                </p>
+
+    <!-- News Section -->
+        <section class="news" id="news">
+            <h2>Latest News</h2>
+            <div class="news-container">
+                <!-- Card 1 -->
+                <div class="news-card">
+                    <h3>US Open 2024 Set for Thrilling Showdown</h3>
+                    <p><strong>August 26 - September 8, 2024 | New York City, USA</strong></p>
+                    <p>
+                        The US Open 2024 is expected to feature a thrilling lineup of tennis superstars competing for one of the most prestigious titles in the sport. Fans are eagerly awaiting to see the top-ranked players in action at the USTA Billie Jean King National Tennis Center.
+                    </p>
+                    <button onclick="readMore(1)">Read More</button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="news-card">
+                    <h3>Laver Cup Returns in 2024</h3>
+                    <p><strong>September 20 - 22, 2024 | Berlin, Germany</strong></p>
+                    <p>
+                        The Laver Cup 2024 will see Team Europe face Team World in an intense battle of tennis supremacy. Held at the Mercedes-Benz Arena in Berlin, this unique team competition promises excitement and high-stakes action for tennis enthusiasts.
+                    </p>
+                    <button onclick="readMore(2)">Read More</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="news-card">
+                    <h3>IPL 2024: Teams Prepare for Another Spectacular Season</h3>
+                    <p><strong>March - May, 2024 | India</strong></p>
+                    <p>
+                        The Indian Premier League (IPL) is back in 2024, with teams gearing up for another season filled with excitement, big hits, and stunning catches. Fans are eagerly waiting for the action-packed tournament featuring cricket’s biggest stars.
+                    </p>
+                    <button onclick="readMore(3)">Read More</button>
+                </div>
+            </div>
+        </section>
+        </div>
+        </div>
+
+        <!-- gallery -->
+
+        <div class="container">
+            <h1>Highlights</h1>
+            <div id="mygallery" class="gallery" >
+            <figure class="card">
+                <img src="gallery1.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery2.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery3.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery4.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery5.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery6.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery7.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery8.jpg" alt="">
+            </figure>
+            <figure class="card">
+                <img src="gallery9.jpg" alt="">
+            </figure>
+            </div>
+        </div>
+        </div>
+        
+        
+
+<!--Medical -->
+    <!-- <section class="medical_Aspect" id="medical">
+            <h2>Govt. Approved Medical Fitness Check</h2>
+            <p>Please press ENTER to submit you details</p>
+            <form action="#">
+              <a href="registration_form.html"><input type="enter" value="Enter"></a>
+            </form>
+        </div>
+    </section> -->
+
+
+    <!-- Logo -->
+    <div class="logo-section">
+        <img src="olympics.png" alt="Olympics" />
+        <img src="IPC.png" alt="IPC" />
+        <img src="viksit.png" alt="Viksit Bharat" />
+        <img src="SAI3.png" alt="SAI" />
+        <img src="g20.png" alt="G20" />
+        <img src="fitindia.jpg" alt="Fit India" />
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><img src="facebookw.png"alt="Facebook"></a>
+                <a href="#"><img src="twitterw.png" alt="Twitter"></a>
+                <a href="#"><img src="instaw.png" alt="Instagram"></a>
+                <a href="#"><img src="youtubew.png" alt="YouTube"></a>
+            </div>
+            <div class="contact-info">
+                <p>Tel No. : 0123456789</p>
+                <!-- <p>Email id : <a href="mailto:kreeda.div@gov.in">kreeda.div@gov.in</a></p> -->
+                <p>Email id: <a href="mailto:kreeda.div@gov.in" style="color: white;">kreeda.div@gov.in</a></p>
+
+            </div>
+            <div class="privacy">
+                <a href="#">PRIVACY POLICY</a>
+            </div>
+            <div class="logos">
+                <img src="ministry.jpg" alt="Ministry of Youth Affairs and Sports">
+                <img src="SAI1.jpg" alt="SAI">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright क्रीडा India 2022. All Rights Reserved.</p>
+        </div>
+    </footer>
+  </body>
+</html>
