@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3.9px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 10px;
+    background-color: #444;
+}
+
+/* Donate Button */
+.donate-btn {
+    background-color: #e91e63;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.donate-btn:hover {
+    background-color: #d81b60;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('ngo.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h2 {
+    font-size: 3.4em;
+    margin-bottom: 152px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+}
+
+.banner button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.banner button:hover {
+    background-color: #d81b60;
+}
+
+/* Mission Section */
+.mission {
+    padding: 50px;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.mission p {
+    font-size: 1.2em;
+    /* font-size: 22px; */
+    font-family: "Nunito Sans", sans-serif;
+}
+/* Photo Gallery */
+.photo-gallery {
+    padding: 60px -23px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.photo-gallery h2 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #303080;
+    color: #fff;
+    padding: 21px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-left p {
+    font-size: 1em;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.footer-center ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li,
+.footer-right ul li {
+    margin: 10px 0;
+}
+
+.footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-center ul li a:hover {
+    color: #fdd835;
+}
+
+.footer-right .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: 113px;
+}
+
+.footer-right .social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.footer-right .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer-right p {
+    font-size: 1em;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-container div {
+        margin-bottom: 30px;
+    }
+
+    .footer-right .social-icons {
+        justify-content: center;
+    }
+}
