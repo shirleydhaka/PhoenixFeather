@@ -267,6 +267,8 @@ footer {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
+    margin-left: 113px;
+    
 }
 
 .social-icons a {
@@ -295,7 +297,9 @@ footer {
         align-items: center;
         text-align: center;
     }
-
+    .social-icons{
+          margin-left: 47px;
+    }
     .footer-left, .footer-center, .footer-right {
         margin-bottom: 20px;
     }
