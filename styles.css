@@ -160,6 +160,121 @@ nav ul li a {
   color: #fff;
   font-family: 'Lato', sans-serif;
 }
+
+/* Chatbot Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.chatbot-container {
+  width: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatbot-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.chatbot-body {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.message.user-message {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+.message.bot-message {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+}
+
+.chatbot-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chatbot-footer input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.chatbot-footer button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatbot-footer button:hover {
+  background-color: #0056b3;
+}
+
+.open-chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #454545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.open-chatbot:hover {
+  background-color: #0056b3;
+}
+
+.close-chatbot {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-chatbot:hover {
+  color: #ff4d4d;
+}
+
 footer {
   background-color: #1a3972;
   color: white;
